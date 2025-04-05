@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background-color:#ffafcc;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#first-section {
+    display: flex;
+    background-color: #fd96bc;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#title {
+    text-align: center;
+    color: #ffff;
+}
+
+#subtitle {
+    background-color: #d884a3;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: lighter;
+    color: #ffff;
+}
+
+#div-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.link {
+    color: #bfe0ff;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.link:hover {
+    font-size: 20px;
+    color: #0084ff;
+}
+
+#second-section,
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    width: 48%;
+}
+
+.div-form {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-form span {
+    color: black;
+}
+
+.input,
+#option-best-man {
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    width: 220px;
+    cursor: pointer;
+}
+
+#send {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#send:hover {
+    background-color: #d3d3d3;
+}
+
+table.principal-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table.principal-table tbody tr:hover {
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+
+table.principal-table td,
+table.principal-table th {
+    border: 1px solid #000000;
+    padding: 3px 2px;
+}
+
+table.principal-table tbody td {
+    font-size: 13px;
+}
+
+table.principal-table thead {
+    background: #E0D9FF;
+    border-bottom: 1px solid #000000;
+}
+
+table.principal-table thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    border-left: 1px solid #000000;
+}
+
+table.principal-table thead th:first-child {
+    border-left: none;
+}
+
+table.principal-table tfoot td {
+    font-size: 14px;
+}
+
+.total {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.total span,
+.total h1 {
+    font-size: large;
+    margin: 0 5px;
+}
+
+.total h1{
+    font-weight: bolder;
+}
+
+.div-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.edit {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.edit:hover {
+    color: red;
+    font-weight: bold;
+}
