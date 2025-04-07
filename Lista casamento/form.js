@@ -48,9 +48,17 @@ submit.addEventListener('click', (e)=>{
 
    let obj= {
       family, people, names, paying,  bestman
-
       // essa parte gostaria de uma boa explicação
    }
+
+   localStorage.setItem("batatinha", JSON.stringify(obj))
+
+   input.forEach(ipt => {
+      ipt.value= ''
+
+
+   })
+
 
    e.preventDefault()
 })
