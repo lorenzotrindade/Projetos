@@ -56,6 +56,9 @@ submit.addEventListener('click', (e)=>{
    input.forEach(ipt => {
       ipt.value= ''
 
+      // para cada ipt, ele valerá nada, que seria a cada repreenchimento
+      // precisa tirar dessebatatinha, e colcoar em outro lugar esse valores 
+
 
    })
 
