@@ -4,22 +4,16 @@ let register = JSON.parse(localStorage.getItem("batatinha"))
 
 console.log(register)
 
-if(register) {
-    if(localStorage.getItem("convidados")=== null) {
+if (register) {
+    if (localStorage.getItem("convidados") === null) {
         list.push(register);
-        // se esse cfara é nulo, push(EMPURAMOS A A LISTA)
         localStorage.setItem("convidados", JSON.stringify(list))
-        // empurar para aonde? lista que está aonde? e comostring
-
+        // se não existe a chave convidados === nul vazio, list push, adiciona convidados a registerm agora poega ele e transforma um uma string objeto e colcoa na list
     } else {
-        let l = JSON.parse(localStorage.getItem("convidados"))
-        // pegamos o objeto convidados da lista, ecolcoamos dentro da var l
-
-        l.push(register)
-        //empuramos denovo apra a lista?
-
-        localStorage.setItem("convidados", JSON.stringify(l))
-        // sim empuramos ele devolta, mas agora como string, usando stringify
+        let l = JSON.parse(localStorage.getItem("convidados"));
+        l.push(register);
+        localStorage.setItem("convidados", JSON.stringify(l));
+        // empurramos a já existente para register e depois mandamos pro logalk storage como stringify
     }
 }
 
@@ -27,7 +21,7 @@ function init() {
     let l = JSON.parse(localStorage.getItem("convidados"))
     // o que fazemos aqui e porque?
 
-    if(!l) {
+    if(!l) 
         return;
         // senão l, true? então acaba a function 
 
@@ -44,7 +38,7 @@ function init() {
 
         {
             // enquantofor true a coindição for, ocorre issoi aqui:
-        let tr = document.createElement("tr")            
+        let tr = document.createElement("tr")          
         let id = document.createElement("td")
         let family = document.createElement("td")
         let names = document.createElement("td")
@@ -64,10 +58,5 @@ function init() {
        span.innerHTML = 'editar'
 
        // quero me explique pq fiz essas liha aqui e a logica por tras delas
-        }
-
-
-    } else {
-
-    }
+        } 
 }

@@ -52,6 +52,7 @@ submit.addEventListener('click', (e)=>{
    }
 
    localStorage.setItem("batatinha", JSON.stringify(obj))
+   // sempre que vc coloca um local storage, vc precisa de uma chave string e colocar o valor dela
 
    input.forEach(ipt => {
       ipt.value= ''
