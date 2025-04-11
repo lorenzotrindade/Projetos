@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header{
+    background-color: rgb(49, 49, 134);
+
+    height: 100px;
+    width: auto;
+
+    text-align: center;
+}
+
+header > h1 {
+    
+    color: rgba(255, 210, 10, 0.979);
+
+    height: 4.5vh;
+    padding: 20px;
+}
+
+#form {
+    background-color: aqua;
+
+
+    width:400px;
+    height: 200px;
+    margin: auto;
+    padding: auto;
+}
+#form > p{
+    padding-top: 5px;
+    margin-left: 10px ;
+
+}
+
+#h1forms {
+    color: rgb(13, 13, 129);
+
+    text-align: center ;
+}
