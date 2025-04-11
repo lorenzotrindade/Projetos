@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Formulario de custos</title>
+    <title>Registro de empresa</title>
 </head>
 <body>
   <header><h1>Taconet</h1></header>
@@ -12,7 +12,7 @@
   <section>
     <div id="form">
       <h1 id="h1forms">Nova empresa</h1>
-      <p> Nome:
+      <p class="entrada"> Nome:
         <input type="text" id="nome"> </input>
      <select name="tipo" id="tipo" width=20px>
       <!-- aqui deveriaconseguir colocar o tipo -->
@@ -20,9 +20,9 @@
       <option value="Cliente">Cliente</option >
      </select>
       </p>
-      <p>Pais:
+      <p class="entrada">Pais:
       <!-- ta estranho, pois parece que tudo é o mesmo paragrafo, mas não é, e se colocar outro p pro select, vai para baixa e não ao lado -->
-        <select name="pais" id="pais">
+        <select name="pais" id="pais" class="select">
           <option value="pais" class="paises">Brasil</option>
           <option value="pais" class="paises">Argentina</option>
           <option value="pais" class="paises">Chile</option>
@@ -32,7 +32,7 @@
 
         </select>
 
-        <select name="estado" id="estado">Estado(UF)
+        <select name="estado" id="estado"  class="select">Estado(UF)
           <option  class="estadosbr">Acre</option>
           <option class="estadosbr">Alagoas</option>
           <option  class="estadosbr">Amapá</option>
@@ -63,16 +63,29 @@
                 
         </select>
       </p>
-      <p>Razão social:
+      <p class="entrada">Razão social:
         <input type="tex" id="razao">
       </p>
-      <p>Endereço:
-        <input type="number"  id="endereco">
+      <p class="entrada">Endereço:
+        <input type="number"  id="endereco" class="entrada">
       </p>
-      <p>CEP:<input type="text" id="cep"></input></p>
+      <p class="entrada">CEP:<input type="text" id="cep" class="entrada"></input></p>
+
+      <!-- //esses não ficam embaxio, mas sim do lado -->
+
+      <p class="entrada">CNPJ:<input type="text"  id="cnpj" class="entrada"></p>
+      <p class="entrada">Telefone:<input type="text"  id="cnpj" class="entrada"></p>
+
+      <!-- //essas divs não deveriam ficar aqui -->
+      <div><input type="button" value="Limpar" onclick="Limpar()"> </div>
       
     </div>
+    <div><input type="button" value="Criar Empresa" onclick="CriarEmpresa()"> </div>
+  </div>
+  <div><input type="button" value="Cancelar" onclick="Cancelar()"> </div>
   </section>
 </body>
-
+<script src="CriarEmpresa.js"></script>
+<script src="Limpar.js"></script>
+<script src="Cancelar.js"></script>
 </html>

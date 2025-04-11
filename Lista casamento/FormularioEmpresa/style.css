@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    height: 20%;
+    background:linear-gradient(to bottom, #0b62e4, #1d28c5, #064185);
+    padding: 40px;
+}  
+
+    header > h1 {
+        text-align: center;
+        color: aliceblue;
+        padding: 5px;
+    }
+
+
+    body {
+        background:linear-gradient(to top, #0b62e4);
+        width: 100%;
+        
+    }
+    section {
+        align-content: center;
+
+        background-color: #dbf3db;
+
+         width:600px;
+        height:auto; 
+        
+        
+        padding:1px;
+        margin:-0% 10% 0% 10% ;
+
+    }
+    
+.entrada {
+    
+    text-align:left;
+    padding-left: 20px;
+    
+    margin-top: 5px;
+   
+}
+
+
