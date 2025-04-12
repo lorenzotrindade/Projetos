@@ -42,3 +42,10 @@ header > h1 {
 
     text-align: center ;
 }
+
+body {
+    /* background-color:-o-linear-gradient(top blue, rgb(3, 3, 143), rgb(2, 2, 92)); */
+
+    background-color: rgb(26, 161, 116);
+    
+}
