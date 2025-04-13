@@ -12,15 +12,15 @@
   <section>
     <div id="form">
       <h1 id="h1forms">Nova empresa</h1>
-      <p class="entrada"> Nome:
-        <input type="text" id="nome"> </input>
+      
+      <label for="Nome">Nome</label>
      <select name="tipo" id="tipo" width=20px>
       <!-- aqui deveriaconseguir colocar o tipo -->
       <option value="Distribuidor">Distribuidor</option>
       <option value="Cliente">Cliente</option >
      </select>
-      </p>
-      <p class="entrada">Pais:
+      
+     <label for="pais">Pais</label>
       <!-- ta estranho, pois parece que tudo é o mesmo paragrafo, mas não é, e se colocar outro p pro select, vai para baixa e não ao lado -->
         <select name="pais" id="pais" class="select">
           <option value="pais" class="paises">Brasil</option>
@@ -62,19 +62,12 @@
           <option class="estadosbr">Tocantins</option>
                 
         </select>
-      </p>
-      <p class="entrada">Razão social:
-        <input type="tex" id="razao">
-      </p>
-      <p class="entrada">Endereço:
-        <input type="number"  id="endereco" class="entrada">
-      </p>
-      <p class="entrada">CEP:<input type="text" id="cep" class="entrada"></input></p>
-
-      <!-- //esses não ficam embaxio, mas sim do lado -->
-
-      <p class="entrada">CNPJ:<input type="text"  id="cnpj" class="entrada"></p>
-      <p class="entrada">Telefone:<input type="text"  id="cnpj" class="entrada"></p>
+    
+        <label for="Razão Socia"></label>
+        <label for="Endereço">Endereço:</label>
+        <label for="entrada"></label>
+        <label for="CNPJ">CNPJ</label>
+        <label for="Telefone"></label>
 
       <!-- //essas divs não deveriam ficar aqui -->
       <div><input type="button" value="Limpar" onclick="Limpar()"> </div>
