@@ -10,23 +10,26 @@
   <header><h1>Calculos custos de show</h1></header>
 
   <section>
-    <div id="form">
-      <h1 id="h1forms">Informe os valores gasto na noite</h1>
-       Transporte:
-        <label for="transporte"> transporte</label>        
-      <p>Aluguel AMP:
-        <input type="number" id="amp"> </input>
-      </p>
-      <p>Comida:
-        <input type="number" name="insumos" id="comida">
-      </p>
-      <p>Bebidas:
-        <input type="number" name="insumos" id="bebidas">
+   <form>
+     <label for="transporte">transporte</label>
+     <input type="number" name="transporte" id="transporte">
 
-      </p>
+     <label for="amp">AMP</label>
+     <input type="number" name="amp" id="amp">
 
-      <p><input type="button" value="Enviar" onclick="calcular()"></p>
+     <label for="comidas">Comidas</label>
+     <input type="number" name="comidas" id="comidas">
 
+     <label for="bebidas">Bebidas</label>
+     <input type="number" name="bebidas" id="bebidas">
+     <input type="submit" value="enviar">
+      
+    </section>
+   </form>
+<div>
+  
+  <input value="Enviar"type="button" name="enviar" id="enviar" onclick="calcular()"></input>
+</div>
     </div>
     <div id="resultado">Aqui aparece o resultado</div>
   </section>
