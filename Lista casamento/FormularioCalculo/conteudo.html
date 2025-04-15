@@ -11,27 +11,34 @@
 
   <section>
    <form>
-     <label for="transporte">transporte</label>
-     <input type="number" name="transporte" id="transporte">
+    <div>
+     <div class="input">
+       <label for="transporte">Transporte</label>
+       <input type="number" name="transporte" id="transporte">
+     </div>
 
-     <label for="amp">AMP</label>
-     <input type="number" name="amp" id="amp">
+     <div class="input">
+       <label for="amp">AMP</label>
+       <input type="number" name="amp" id="amp">
+     </div>
 
-     <label for="comidas">Comidas</label>
-     <input type="number" name="comidas" id="comidas">
+     <div class="input">
+       <label for="comidas" id="comidas">Comidas</label>
+       <input type="number" name="comidas" id="comidas">
+     </div>
 
-     <label for="bebidas">Bebidas</label>
-     <input type="number" name="bebidas" id="bebidas">
-     <input type="submit" value="enviar">
-      
-    </section>
-   </form>
+     <div class="input">
+       <label for="bebidas">Bebidas</label>
+       <input type="number" name="bebidas" id="bebidas">
+       
+     </div>
 <div>
   
   <input value="Enviar"type="button" name="enviar" id="enviar" onclick="calcular()"></input>
 </div>
     </div>
     <div id="resultado">Aqui aparece o resultado</div>
+  </form>
   </section>
 </body>
 <script src="calcular.js"></script>
