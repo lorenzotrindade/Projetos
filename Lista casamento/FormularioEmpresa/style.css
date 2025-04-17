@@ -19,21 +19,30 @@ header {
     body {
         background:linear-gradient(to top, #0b62e4);
         width: 100%;
+        height: 100%;
         
     }
+
     section {
-        align-content: center;
-
-        background-color: #dbf3db;
-
-         width:600px;
-        height:auto; 
-        
-        
-        padding:1px;
-        margin:-0% 10% 0% 10% ;
-
+        width: 100%;
+        height: 100vh;
     }
+    #form {
+        background-color: #3a6a7e;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 400px;
+       
+    }
+        
+
+
+        
+        
+        
     
 .entrada {
     
