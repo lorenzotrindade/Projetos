@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+
+    font-family:sans-serif; 
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:url(pexels-introspectivedsgn-9661370.jpg);
+    background-size:cover;
+    /* o size trava o fundo fixo né? */
+    background-position: center;
+}
+
+.container
+/* obs o conteiner e o propprio main de defini */
+{
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px 40px;
+}

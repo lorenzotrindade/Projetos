@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login DEVCLUB</title>
+    <!-- //link do pacote de emoji -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" >
+     <link rel="stylesheet" href="estilologin.css">
+</head>
+<body>
+   <main class="container">
+    <!-- porque esse main? para ajudar na sintaxe?me explica chat-->
+    <form action="input-box">
+        <h1>Login DevClub</h1>
+        <div>
+            <input placeholder="User" type="email" name="email" id="email">
+            <!-- nesse caso, usado o type, a gente tem aquele autocomplete do sistema e no caso da senha tudo fica em **** -->
+             <i class="bx bxs-user"></i>
+        </div>
+        <div>
+            <!-- não poderia ser um label aqui? -->
+            <input type="password" name="senha" id="senha" placeholder="password">
+            <i class="bx bxs-lock-alt"></i>
+            <!-- o que tag é essa? -->
+        </div>
+        <!-- acho que a mandiga é essa neé chatgpt, sempre qur for criar um formulario e tiver caixas para inserrir dados, a gente coloca ela dentro de uma div, seria isso? -->
+         <div class="remember-forgot">
+            <label>
+                <!-- label não precisa de reposta apra quem necessariamente se tiver dentro dele -->
+
+            <input type="checkbox" name="remember" id="remember">
+         Remember forgot
+         </label>
+         <a href="#">I dont'now</a>
+         </div>
+
+         <button type="submit">Login</button>
+         <!-- não sabia da existenciua da tag button e ainda mais, quais os type dela? -->
+          <div class="register-link">
+            <p>Don't have on account? <a href="">Register</a>
+            </p>
+          </div>
+    </form>
+   </main>
+    
+</body>
+</html>

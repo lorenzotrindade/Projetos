@@ -25,10 +25,22 @@ header > h1 {
 form {
     background-color: rgb(194, 207, 207);
 
+    
 
+}
+#div-principal {
+    background-color: rgb(230, 170, 92);
+
+    display: flex;
+    justify-content: center;
+
+    width: 100vh;
+    height: 400px;
+    margin: auto ;
+    padding: auto;
+ 
     
 }
-
 
 
 #h1forms {
@@ -41,11 +53,10 @@ form {
     margin-left:10px ;
     margin-bottom:3px;
     margin-top: 10px;
+    margin-right: 20px;
 
 }
 body {
-    /* background-color:-o-linear-gradient(top blue, rgb(3, 3, 143), rgb(2, 2, 92)); */
-
     background-color: rgb(26, 161, 116);
     
 }
