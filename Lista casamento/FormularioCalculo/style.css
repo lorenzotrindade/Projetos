@@ -22,20 +22,14 @@ header > h1 {
     padding: 20px;
 }
 
-#form {
-    background-color: aqua;
+form {
+    background-color: rgb(194, 207, 207);
 
 
-    width:400px;
-    height: 200px;
-    margin: auto;
-    padding: auto;
+    
 }
-#form > p{
-    padding-top: 5px;
-    margin-left: 10px ;
 
-}
+
 
 #h1forms {
     color: rgb(13, 13, 129);
@@ -43,6 +37,12 @@ header > h1 {
     text-align: center ;
 }
 
+.input{
+    margin-left:10px ;
+    margin-bottom:3px;
+    margin-top: 10px;
+
+}
 body {
     /* background-color:-o-linear-gradient(top blue, rgb(3, 3, 143), rgb(2, 2, 92)); */
 
