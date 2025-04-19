@@ -18,31 +18,81 @@ body{
     /* esse cara acima arruma a posição da imagem para nos */
     background-size: cover;
     /* esse cara deixa ela parada */
-  
 
-   
-}
+    justify-content: center;
+     /* com isso eu alinho ao centro o corpo e dali eu arrumo */
 
+} 
 
+main {
 
-form {
     background-color:transparent ;
     backdrop-filter: blur(4px);
-   
-    /* justify-content: center; */
- 
+
     height: 200px;
     width: 420px;
     border: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 20px 15px 15px;
+ 
+}
+form {
 
-
-    padding: 30px 40px;
+    text-align: center;
+    padding: 5px 0 10px;
+    margin: 5px 0 5px;
 
 }
 
-.container {
+.input-box {
+    width: 85%;
+    height: 100%;
 
+    /* pois aqui estamos dizendo que as caixa input box, vão usarto esses valores da caixa container */
 
+    /* logo nos input podemos definir os seus valores, pois é uma caixa dentrop de caixa */
+}
+
+h1 { 
+    margin-bottom: 10px;
+    text-align: center;
+}
+.input-box input {
+    text-align:left;
+
+    border-radius: 20px;
+    border-color: #dad4d4;
+    background-color:transparent ;
+    outline:none;
+    
+   
+    padding: 10px 10px 10px 20px;
+    margin: 2px;
+    margin-left: 15px;
+
+    width: 100%;
+    height: 100%;
+     /* aqui definimos quanto os input vão utilizar da caixa inputbox */
+    
+}
+
+.input-box ::placeholder {
+    color: #fff ;
+}
+
+#icone-email { 
+    
+    position: absolute;  
+    right: 40px;
+    top: 70px;
+    color: #fff ;
+    
+}
+
+#icone-senha   {
+
+    position: absolute;  
+    right: 40px;
+    top: 112px;
+    color: #fff ;
 
 }
