@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family:sans-serif; 
+    color: #fff;
+}
+
+body{
+
+    background-image:url(pexels-wagner-wang-472738848-15958028.jpg);
+
+    display: flex;
+    align-items: center; 
+    min-height: 100vh;
+    width: 100%;
+    background-position: center; 
+    /* esse cara acima arruma a posição da imagem para nos */
+    background-size: cover;
+    /* esse cara deixa ela parada */
+  
+
+   
+}
+
+
+
+form {
+    background-color:transparent ;
+    backdrop-filter: blur(4px);
+   
+    /* justify-content: center; */
+ 
+    height: 200px;
+    width: 420px;
+    border: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+    padding: 30px 40px;
+
+}
+
+.container {
+
+
+
+}
