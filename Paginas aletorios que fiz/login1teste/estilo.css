@@ -22,6 +22,9 @@ body{
     justify-content: center;
      /* com isso eu alinho ao centro o corpo e dali eu arrumo */
 
+     overflow: hidden;
+     /* removendo barras de rolagem */
+
 } 
 
 main {
@@ -62,7 +65,7 @@ h1 {
 
     border-radius: 20px;
     border-color: #dad4d4;
-    background-color:transparent ;
+    background-color:transparent;
     outline:none;
     /* box-shadow: rgba(5, 146, 151, 0.904) 0px 5px; */
     box-shadow:  rgba(0, 1, 2, 0.219) 5px 5px 5px 5px;
@@ -81,6 +84,20 @@ h1 {
     
 }
 
+.input-box:hover {
+    background: red;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+    rect {
+      /* stroke-width: 5; */
+      /* stroke-dasharray: 15, 310; */
+      /* stroke-dashoffset: 48; */
+      /* transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); */
+    }
+  }
+
+
 .input-box ::placeholder {
     color: #fff ;
 }
@@ -98,7 +115,10 @@ h1 {
 
     position: absolute;  
     right: 40px;
-    top: 112px;
+    top: 120px;
     color: #fff ;
 
+   
 }
+
+
