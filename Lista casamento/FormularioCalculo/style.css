@@ -1,62 +1,88 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    outline: none;
 }
 
-header{
-    background-color: rgb(49, 49, 134);
+body { 
+    width: 100%;
+    height: 100%;
 
-    height: 100px;
-    width: auto;
-
-    text-align: center;
-}
-
-header > h1 {
+ 
+    background-image:url(pexels-miyatavictor-1824273.jpg);
+    background-size:cover;
+    /* o size trava o fundo fixo né? */
+    background-position: center;
     
-    color: rgba(255, 210, 10, 0.979);
-
-    height: 4.5vh;
-    padding: 20px;
 }
-
-form {
-    background-color: rgb(194, 207, 207);
-
-    
-
-}
-#div-principal {
-    background-color: rgb(230, 170, 92);
+main { 
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    width: 100vh;
-    height: 400px;
-    margin: auto ;
-    padding: auto;
- 
+    min-height: 100vh;
+
+    /* assim que se centraliza div */
+
     
+
+}
+
+section {
+    background-color: rgb(66, 15, 100,0.5);
+    background:blur(20px);
+
+    box-shadow: rgba(253, 6, 171, 0.897) 0px 5px 15px;
+
+
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+
+    text-align: center;
+  
+
+}
+
+form {
+
+    width:100%;
+    height: 100%;
+
+    margin: 15px 0px 0px 5px;
+}
+
+.div-input {
+    text-align: left;
+    /* color: rgb(18, 26, 138); */
+
+    width: 100%;
+    height: 100%;
+
+}
+.div-input input {
+    color:  rgb(0, 0, 0);
+   background: #ffffff41;
+
+   margin: 5px 5px 2px 5px;
+   padding: 5px;
+   border-radius: 5px;
+
+   width: 90%;
+
+
+}
+.div-input ::placeholder {
+    color: rgb(21, 21, 22);
 }
 
 
-#h1forms {
-    color: rgb(13, 13, 129);
 
-    text-align: center ;
-}
 
-.input{
-    margin-left:10px ;
-    margin-bottom:3px;
-    margin-top: 10px;
-    margin-right: 20px;
 
-}
-body {
-    background-color: rgb(26, 161, 116);
-    
-}
+
