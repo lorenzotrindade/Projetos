@@ -1,82 +1,133 @@
 <!DOCTYPE html>
-<html lang="lt-br">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Registro de empresa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Taconet</title>
 </head>
+
 <body>
-  <header><h1>Taconet</h1></header>
+  <header><h1>Registro empresa</h1></header>
 
   <section>
     <div id="form">
       <h1 id="h1forms">Nova empresa</h1>
-      
-      <label for="Nome">Nome</label>
-     <select name="tipo" id="tipo" width=20px>
-      <!-- aqui deveriaconseguir colocar o tipo -->
-      <option value="Distribuidor">Distribuidor</option>
-      <option value="Cliente">Cliente</option >
-     </select>
-      
-     <label for="pais">Pais</label>
-      <!-- ta estranho, pois parece que tudo é o mesmo paragrafo, mas não é, e se colocar outro p pro select, vai para baixa e não ao lado -->
+
+      <div id="divnome">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+
+      <div id="div-tipo">
+        <label for="tipo">Tipo:</label>
+        <select name="tipo" id="tipo">
+          <option value="Distribuidor">Distribuidor</option>
+          <option value="Cliente">Cliente</option>
+        </select>
+      </div>
+
+      <div id="div-paises">
+        <label for="pais">País:</label>
         <select name="pais" id="pais" class="select">
-          <option value="pais" class="paises">Brasil</option>
-          <option value="pais" class="paises">Argentina</option>
-          <option value="pais" class="paises">Chile</option>
-          <option value="pais" class="paises">Equador</option>
-          <option value="pais" class="paises">Uruguai</option>
-
-
+          <option value="Brasil">Brasil</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+          <option value="Equador">Equador</option>
+          <option value="Uruguai">Uruguai</option>
         </select>
+      </div>
 
-        <select name="estado" id="estado"  class="select">Estado(UF)
-          <option  class="estadosbr">Acre</option>
-          <option class="estadosbr">Alagoas</option>
-          <option  class="estadosbr">Amapá</option>
-          <option class="estadosbr">Amazonas</option>
-          <option class="estadosbr">Bahia</option>
-          <option class="estadosbr">Ceará</option>
-          <option class="estadosbr">Distrito Federal</option>
-          <option  class="estadosbr">Espírito Santo</option>
-          <option  class="estadosbr">Goiás</option>
-          <option  class="estadosbr">Maranhão</option>
-          <option  class="estadosbr">Mato Grosso</option>
-          <option  class="estadosbr">Mato Grosso do Sul</option>
-          <option  class="estadosbr">Minas Gerais</option>
-          <option  class="estadosbr">Pará</option>
-          <option  class="estadosbr">Paraíba</option>
-          <option  class="estadosbr">Paraná</option>
-          <option  class="estadosbr">Pernambuco</option>
-          <option  class="estadosbr">Piauí</option>
-          <option  class="estadosbr">Rio de Janeiro</option>
-          <option  class="estadosbr">Rio Grande do Norte</option>
-          <option  class="estadosbr">Rio Grande do Sul</option>
-          <option class="estadosbr">Rondônia</option>
-          <option  class="estadosbr">Roraima</option>
-          <option class="estadosbr">Santa Catarina</option>
-          <option class="estadosbr">São Paulo</option>
-          <option class="estadosbr">Sergipe</option>
-          <option class="estadosbr">Tocantins</option>
-                
+      <div id="div-estado">
+        <label for="estado">Estado (UF):</label>
+        <select name="estado" id="estado">
+          <option value="Acre">Acre</option>
+          <option value="Alagoas">Alagoas</option>
+          <option value="Amapá">Amapá</option>
+          <option value="Amazonas">Amazonas</option>
+          <option value="Bahia">Bahia</option>
+          <option value="Ceará">Ceará</option>
+          <option value="Distrito Federal">Distrito Federal</option>
+          <option value="Espírito Santo">Espírito Santo</option>
+          <option value="Goiás">Goiás</option>
+          <option value="Maranhão">Maranhão</option>
+          <option value="Mato Grosso">Mato Grosso</option>
+          <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+          <option value="Minas Gerais">Minas Gerais</option>
+          <option value="Pará">Pará</option>
+          <option value="Paraíba">Paraíba</option>
+          <option value="Paraná">Paraná</option>
+          <option value="Pernambuco">Pernambuco</option>
+          <option value="Piauí">Piauí</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+          <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+          <option value="Rondônia">Rondônia</option>
+          <option value="Roraima">Roraima</option>
+          <option value="Santa Catarina">Santa Catarina</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Sergipe">Sergipe</option>
+          <option value="Tocantins">Tocantins</option>
         </select>
-    
-        <label for="Razão Socia"></label>
-        <label for="Endereço">Endereço:</label>
-        <label for="entrada"></label>
-        <label for="CNPJ">CNPJ</label>
-        <label for="Telefone"></label>
+      </div>
 
-      <!-- //essas divs não deveriam ficar aqui -->
-      <input type="button" value="Limpar" onclick="Limpar()"> 
-      <input type="button" value="Criar Empresa" onclick="CriarEmpresa()"> 
-      <input type="button" value="Cancelar" onclick="Cancelar()">
+      <div id="div-razao-social">
+        <label for="razao_social">Razão Social:</label>
+        <input type="text" id="razao_social" name="razao_social">
+      </div>
+
+      <div id="div-cnpj">
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj">
+      </div>
+
+      <div id="div-endereco">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+      </div>
+
+      <div id="div-telefone">
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone">
+      </div>
+
+      <div id="div-cep">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep">
+      </div>
+
+      <div id="smartcard">
+        <label>
+          <input type="checkbox" name="smartcard"> Código de empresa SmartCard
+        </label>
+      </div>
+
+      <div id="empresa-principal">
+        <label>
+          <input type="checkbox" name="empresa_principal"> Empresa principal
+        </label>
+      </div>
+
+      <div id="div-filial">
+        <label for="filial">Filial:</label>
+        <select name="filial" id="filial">
+          <option value="TELEMETRIK">TELEMETRIK</option>
+          <option value="Outra">Outra</option>
+        </select>
+      </div>
+
+      <div id="botoes">
+        <input type="button" value="Limpar" onclick="Limpar()">
+        <input type="button" value="Criar Empresa" onclick="CriarEmpresa()">
+        <input type="button" value="Cancelar" onclick="Cancelar()">
+      </div>
+
     </div>
   </section>
+
+  <script src="CriarEmpresa.js"></script>
+  <script src="Limpar.js"></script>
+  <script src="Cancelar.js"></script>
+
 </body>
-<script src="CriarEmpresa.js"></script>
-<script src="Limpar.js"></script>
-<script src="Cancelar.js"></script>
 </html>
