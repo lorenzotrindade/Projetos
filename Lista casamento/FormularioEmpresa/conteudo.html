@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ESTILO.CSS">
 
   </svg>
   <title>Taconet</title>
@@ -24,18 +24,24 @@
        <div id="main">
         Empresa
          
-          <div id="divnome">
+        <div class="form-row">
+          <div class="form-group">
+        
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome">
-          </div>
-          <div id="div-tipo">
+         </div>
+          
+         <div class="form-group">     
             <label for="tipo">Tipo:</label>
             <select name="tipo" id="tipo">
               <option value="Distribuidor">Distribuidor</option>
               <option value="Cliente">Cliente</option>
             </select>
           </div>
-          <div id="div-paises">
+        </div>
+
+
+          <div class="form-row">
             <label for="pais">País:</label>
             <select name="pais" id="pais" class="select">
               <option value="Brasil">Brasil</option>
@@ -45,7 +51,8 @@
               <option value="Uruguai">Uruguai</option>
             </select>
           </div>
-          <div id="div-estado">
+
+          <div class="form-group">
             <label for="estado">Estado (UF):</label>
             <select name="estado" id="estado">
               <option value="Acre">Acre</option>
@@ -76,44 +83,66 @@
               <option value="Sergipe">Sergipe</option>
               <option value="Tocantins">Tocantins</option>
             </select>
+            </div>
+         
+
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="razao_social">Razão Social:</label>
+              <input type="text" id="razao_social" name="razao_social">
+            </div>
+            <div class="form-group">
+              <label for="cnpj">CNPJ:</label>
+              <input type="text" id="cnpj" name="cnpj">
+            </div>
           </div>
-          <div id="div-razao-social">
-            <label for="razao_social">Razão Social:</label>
-            <input type="text" id="razao_social" name="razao_social">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="endereco">Endereço:</label>
+              <input type="text" id="endereco" name="endereco">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone:</label>
+              <input type="text" id="telefone" name="telefone">
+            </div>
           </div>
-          <div id="div-cnpj">
-            <label for="cnpj">CNPJ:</label>
-            <input type="text" id="cnpj" name="cnpj">
+         
+          <div class="form-row">
+            <div class="form-group" style="flex: 1;">
+              <label for="cep">CEP:</label>
+              <input type="text" id="cep" name="cep">
+            </div>
           </div>
-          <div id="div-endereco">
-            <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco">
-          </div>
-          <div id="div-telefone">
-            <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" name="telefone">
-          </div>
-          <div id="div-cep">
-            <label for="cep">CEP:</label>
-            <input type="text" id="cep" name="cep">
-          </div>
-          <div id="smartcard">
+
+          <div class="form-row">
+            <div class="form-group">
             <label>
               <input type="checkbox" name="smartcard"> Código de empresa SmartCard
             </label>
           </div>
-          <div id="empresa-principal">
+
+          
+            <div class="form-group">
             <label>
               <input type="checkbox" name="empresa_principal"> Empresa principal
             </label>
+            </div>
           </div>
-          <div id="div-filial">
-            <label for="filial">Filial:</label>
-            <select name="filial" id="filial">
-              <option value="TELEMETRIK">TELEMETRIK</option>
-              <option value="Outra">Outra</option>
-            </select>
+
+          <div class="form-row">
+            <div class="form-group" style="flex: 1;">
+              <label for="filial">Filial:</label>
+              <select name="filial" id="filial">
+                <option value="TELEMETRIK">TELEMETRIK</option>
+                <option value="Outra">Outra</option>
+              </select>
+            </div>
           </div>
+
+        </div>
+          
           <div id="botoes">
             <input type="button" value="Limpar" onclick="Limpar()">
             <input type="button" value="Criar Empresa" onclick="CriarEmpresa()">
