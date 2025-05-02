@@ -37,16 +37,16 @@
 
     background: #fff;
     border: 3px dashed  #ccc;
-    padding: 20px;
+    padding: 5px;
   display: flex;
-  justify-content: center;
+  justify-content: auto;
   }
   
   
   #form {
     display: flex;
-  flex-direction: column;
-  gap: 20px;
+    flex-direction: column;
+  
   width: 800px;
   background-color: #fff;
   padding: 20px;
@@ -56,10 +56,11 @@
 
   .form-row{
     display: flex;
-    justify-content: space-between;
-    flex-direction:row-reverse;
-    gap: 20px;
-    margin-bottom: 15px;
+    justify-content: space-evenly;
+    flex-direction:row;
+    align-items: flex-start;
+   
+    margin: 0px 0px 15px 0px;
  
 
   }
@@ -67,8 +68,16 @@
   .form-group {
     display: flex;
     flex-direction: column;
-    flex: 1;
+   
 
+  }
+
+  #nome {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+   
+   
   }
 
   #div-h1-novaempresa{
@@ -92,7 +101,7 @@
   .form-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+   
 
 
 
