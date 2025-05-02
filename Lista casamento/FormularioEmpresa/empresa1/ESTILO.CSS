@@ -64,27 +64,16 @@
   #colunaA {
     display: flex;
     flex-direction: column;
+    width: 100%;
  
     
   }
 
 
-  #colunaA input, select {
-    
-    margin: 2px 5px 0px 0px;
-    padding: 0px; 
-
-    box-sizing: border-box; 
-    width: 150px; 
-    max-height: 20px;
-
-
-  }
-
   #colunaA label {
     display: flex;
     flex-direction: row;
-    align-items: left;
+   
   
     
   }
@@ -93,22 +82,9 @@
 
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 200px;
-    background-color: #fff;
+    width: 100%;
   }
 
-  #colunaB input, select {
-    
-    margin: 2px 5px 2px 0px;; 
-    padding: 0px; 
-
-    box-sizing: border-box; 
-    width: 150px; 
-    max-height: 20px;
-
-    
-  }
   
   #colunaC { 
 
@@ -145,6 +121,46 @@
     margin-top: 10px;
   }
 
+.form-row label {
+    display: inline-block;
+    text-align: left;
+    font-size: 16px; 
+
+    background-color: aqua;
+}
+
+.form-row input {
+    display: inline-block;
+    text-align: right;
+    font-size: 16px; 
+}
+
+.form-row:after {
+    content: '';
+    display: inline-block;
+    width: 100%; 
+}
+
+  
+
+
+  .form-groupB {
+    display: flex;            
+    align-items: center;      
+    gap: 8px;                  
+    margin-bottom: 10px;       
+}
+
+.form-groupB label {
+    width: 100px;              
+    text-align: left;          
+}
+
+.form-groupB input, .form-groupB select {
+                      
+    text-align: left;          
+ 
+}
 
 
 
