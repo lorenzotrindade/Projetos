@@ -36,12 +36,14 @@
   #form {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 900px;
+    height: 400px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    gap: 20px;
+
+  
   }
   
   #main {
@@ -53,7 +55,7 @@
   .form-row-principal {
     display: flex;
     flex-direction: row;
-    ;
+    
     
     align-items: flex-start;
     
@@ -69,20 +71,37 @@
 
   #colunaA input, select {
     
-    margin: 2px 5px 2px 0px;; 
-    padding: 8px; 
+    margin: 2px 5px 0px 0px;
+    padding: 0px; 
 
     box-sizing: border-box; 
     width: 150px; 
     max-height: 20px;
 
 
+  }
+
+  #colunaA label {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  
+    
+  }
+
+  #colunaB {
+
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
   }
 
   #colunaB input, select {
     
     margin: 2px 5px 2px 0px;; 
-    padding: 8px; 
+    padding: 0px; 
 
     box-sizing: border-box; 
     width: 150px; 
@@ -91,54 +110,44 @@
     
   }
   
-  #colunaC {
+  #colunaC { 
+
     display: flex;
     flex-direction: column;
-    text-align:left;
+    justify-content: space-between;
 
-
- 
-    
-  }
-
-
-  #colunaC input, select {
-   
-    box-sizing: border-box; 
-   
-    max-height: 20px;
-
-    box-sizing: 40px;
-    margin: 1px;
-    padding: 0px;
-
-  }
-
-  #smartcard {
-    display: flex;
-    justify-content:row;
-    box-sizing: border-box;
-    box-sizing: 40px;
-    
-
-    
-  }
-
-  #colunaC-FILIAl {
-
-    display: flex;
-    justify-content: bottom;
-    align-items: bottom;
-    
-    box-sizing: border-box; 
-    max-height: 20px;
+    width: auto;
+    height: 200px;
+    background-color: #fff;
 
     margin: 0px;
-    margin-top: 5px;
-    
-    
-  }
+    padding: 10px;
+   
   
+
+  }
+#smartcard {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+
+}
+
+#checkbox-smart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+  #colunaC-FILIAl {
+    margin-top: 10px;
+  }
+
+
+
+
   #div-h1-novaempresa {
     display: flex;
     justify-content: center;
