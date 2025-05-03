@@ -8,12 +8,19 @@
     outline: none;
 }
 
+:root {
+    --cor1:#26030A;
+    --cor2:#75A3BF;
+    --cor3:#F2E0D0;
+    --cor4:#59110B;
+}
+
 body { 
-    width: 100%;
-    height: 100%;
+    width: 100%;  /*largura */
+    height: 100%; /*altura */
 
  
-    background-image:url(pexels-miyatavictor-1824273.jpg);
+    background-image:url(fundodotrabalho.jpg);
     background-size:cover;
     /* o size trava o fundo fixo né? */
     background-position: center;
@@ -21,9 +28,15 @@ body {
 }
 main { 
 
-    display: flex;
+    display: flex;  /*com ele podemos mecher em varios layouts do bagulho*/
+
+
     justify-content: center;
-    align-items: center;
+     /*  Alinha os itens ao centro horizontalmente
+    */
+    align-items: center; 
+     /* Alinha os itens ao centro verticalmente (no eixo cruzado).
+    */
 
     min-height: 100vh;
 
@@ -34,10 +47,9 @@ main {
 }
 
 section {
-    background-color: rgb(66, 15, 100,0.5);
-    background:blur(20px);
-
-    box-shadow: rgba(253, 6, 171, 0.897) 0px 5px 15px;
+    background-color:var(--cor2);
+  
+    box-shadow: var(--cor2) 0px 5px 15px;
 
 
     width: 350px;
@@ -66,8 +78,8 @@ form {
 
 }
 .div-input input {
-    color:  rgb(0, 0, 0);
-   background: #ffffff41;
+    color:var(--cor3);
+   background: var(--cor4);
 
    margin: 5px 5px 2px 5px;
    padding: 5px;
@@ -78,7 +90,7 @@ form {
 
 }
 .div-input ::placeholder {
-    color: rgb(21, 21, 22);
+    color:var(--cor3);
 }
 
 
