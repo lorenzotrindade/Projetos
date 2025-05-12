@@ -1,0 +1,54 @@
+
+    <?xml version="1.0" encoding="UTF-8"?>
+<signos>
+    <signo nome="Áries">
+        <inicio>21-03</inicio>
+        <fim>20-04</fim>
+    </signo>
+    <signo nome="Touro">
+        <inicio>21-04</inicio>
+        <fim>20-05</fim>
+    </signo>
+    <signo nome="Gêmeos">
+        <inicio>21-05</inicio>
+        <fim>20-06</fim>
+    </signo>
+    <signo nome="Câncer">
+        <inicio>21-06</inicio>
+        <fim>22-07</fim>
+    </signo>
+    <signo nome="Leão">
+        <inicio>23-07</inicio>
+        <fim>22-08</fim>
+    </signo>
+    <signo nome="Virgem">
+        <inicio>23-08</inicio>
+        <fim>22-09</fim>
+    </signo>
+    <signo nome="Libra">
+        <inicio>23-09</inicio>
+        <fim>22-10</fim>
+    </signo>
+    <signo nome="Escorpião">
+        <inicio>23-10</inicio>
+        <fim>21-11</fim>
+    </signo>
+    <signo nome="Sagitário">
+        <inicio>22-11</inicio>
+        <fim>21-12</fim>
+    </signo>
+    <signo nome="Capricórnio">
+        <inicio>22-12</inicio>
+        <fim>20-01</fim>
+    </signo>
+    <signo nome="Aquário">
+        <inicio>21-01</inicio>
+        <fim>18-02</fim>
+    </signo>
+    <signo nome="Peixes">
+        <inicio>19-02</inicio>
+        <fim>20-03</fim>
+    </signo>
+</signos>
+</signos>
+    

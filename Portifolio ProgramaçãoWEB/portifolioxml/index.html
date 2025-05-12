@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu Signo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px gray;
+            text-align: center;
+        }
+        input {
+            margin: 10px;
+            padding: 5px;
+        }
+        #res {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<h2>Descubra seu Signo</h2>
+
+<form name="signoForm" onsubmit="return calcularSigno(event)">
+    Dia: <input type="number" name="dia" id="dia" required min="1" max="31">
+    Mês: <input type="number" name="mes" id="mes" required min="1" max="12">
+    Ano: <input type="number" name="ano" id="ano" required>
+    <input type="submit" value="Descobrir Signo">
+</form>
+
+<div id="res"></div>
+
+<script>
+    function calcularSigno(event) {
+        event.preventDefault(); 
+
+        let dia = parseInt(document.getElementById("dia").value);
+        let mes = parseInt(document.getElementById("mes").value);
+
+        let signos = [
+            { nome: "Áries", inicio: { dia: 21, mes: 3 }, fim: { dia: 20, mes: 4 } },
+            { nome: "Touro", inicio: { dia: 21, mes: 4 }, fim: { dia: 20, mes: 5 } },
+            { nome: "Gêmeos", inicio: { dia: 21, mes: 5 }, fim: { dia: 20, mes: 6 } },
+            { nome: "Câncer", inicio: { dia: 21, mes: 6 }, fim: { dia: 22, mes: 7 } },
+            { nome: "Leão", inicio: { dia: 23, mes: 7 }, fim: { dia: 22, mes: 8 } },
+            { nome: "Virgem", inicio: { dia: 23, mes: 8 }, fim: { dia: 22, mes: 9 } },
+            { nome: "Libra", inicio: { dia: 23, mes: 9 }, fim: { dia: 22, mes: 10 } },
+            { nome: "Escorpião", inicio: { dia: 23, mes: 10 }, fim: { dia: 21, mes: 11 } },
+            { nome: "Sagitário", inicio: { dia: 22, mes: 11 }, fim: { dia: 21, mes: 12 } },
+            { nome: "Capricórnio", inicio: { dia: 22, mes: 12 }, fim: { dia: 20, mes: 1 } },
+            { nome: "Aquário", inicio: { dia: 21, mes: 1 }, fim: { dia: 18, mes: 2 } },
+            { nome: "Peixes", inicio: { dia: 19, mes: 2 }, fim: { dia: 20, mes: 3 } }
+        ];
+
+        let signoEncontrado = "Data inválida!";
+        
+        // Percorre os signos e verifica se a data está dentro do intervalo
+        for (let signo of signos) {
+            if ((mes === signo.inicio.mes && dia >= signo.inicio.dia) || 
+                (mes === signo.fim.mes && dia <= signo.fim.dia)) {
+                signoEncontrado = signo.nome;
+                break;
+            }
+        }
+
+        document.getElementById("res").innerHTML = "Seu signo é: " + signoEncontrado;
+    }
+</script>
+
+</body>
+</html>
