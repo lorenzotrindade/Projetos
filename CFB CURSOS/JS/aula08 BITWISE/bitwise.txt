@@ -1,0 +1,21 @@
+BITWISE:
+
+Os operadores bitwise são usados na programação para manipular diretamente os bits de números inteiros. Eles operam ao nível binário, realizando operações como AND, OR, XOR, NOT e deslocamento de bits. Aqui estão alguns dos principais operadores bitwise:
+- AND (&): Compara cada bit de dois números e retorna 1 se ambos forem 1, senão retorna 0.
+- OR (): Compara cada bit de dois números e retorna 1 se pelo menos um dos bits for 1.
+- XOR (^): Retorna 1 somente se os bits comparados forem diferentes.
+- NOT (~): Inverte os bits do número.
+- Shift Left (<<): Desloca os bits para a esquerda, aumentando o valor numérico.
+- Shift Right (>>): Desloca os bits para a direita, reduzindo o valor numérico.
+
+
+
+Pense nos operadores bitwise como ferramentas que ajudam a brincar com os "interruptores" dentro do computador. Cada número é feito de vários bits (0s e 1s), e esses operadores permitem ligar, desligar, inverter ou mover esses bits de lugar.
+Por exemplo:
+- AND (&) é como um filtro que só deixa passar os números onde ambos os bits são 1.
+- OR () funciona como uma "mistura" onde, se pelo menos um dos bits for 1, o resultado será 1.
+- XOR (^) é como um jogo de diferenças: o resultado será 1 se os bits forem diferentes.
+- NOT (~) é um botão de "inversão", mudando todos os 0s para 1s e vice-versa.
+- Shift Left (<<) e Shift Right (>>) são como mover os números para a esquerda ou direita, multiplicando ou dividindo por 2.
+
+
