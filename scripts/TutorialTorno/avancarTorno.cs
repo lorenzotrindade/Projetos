@@ -11,10 +11,10 @@ public string[torre_ferramenta_start,Cylinder01start,bloco_retangular_parado,Nub
 private int passoAtual=0;
 private bool tutoralAtivo = false;
 
-private void OnTriggerEnter(Collider other);
+private void OnTriggerEnter(Collider other)
 {
     //para não reiniciar
-    if (other.CompareTag("player")&& !tutorialAtivo && passoAtual==0);
+    if (other.CompareTag("player")&& !tutorialAtivo && passoAtual==0)
     {
         iniciartutorial();
     }
@@ -29,9 +29,12 @@ void iniciartutorial()
 
 void Update()
 {
-    if(tutorialAtivo && Input.GetKeyDown("KeyCode.Space"))
+    if(tutorialAtivo && Input.GetKeyDown(KeyCode.Space))
     {
         avancarPasso();
+    }
+    else {
+        recuarPasso();
     }
 }
 
@@ -47,6 +50,12 @@ void avancarPasso()
         tutorialAtivo = false;
         Debug.Log("Tutorial do torno concluído");
     }
+}
+void recuarPasso() 
+{
+    if(passoAtual < seqAnimators.Lenght)
+    passoAtual--;
+    executarPasso(passoaAtual);
 }
 void executarPasso(int passo)
 {
