@@ -53,9 +53,15 @@ void avancarPasso()
 }
 void recuarPasso() 
 {
-    if(passoAtual < seqAnimators.Lenght)
-    passoAtual--;
-    executarPasso(passoaAtual);
+    if(passoAtual > 1)
+        {
+            passoAtual--;
+            executarPasso(passoaAtual);
+        }   
+    else 
+    {
+        Debug.LogWarning("Já esta no primerio passo");
+    }
 }
 void executarPasso(int passo)
 {
