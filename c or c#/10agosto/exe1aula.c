@@ -1,3 +1,7 @@
+/*
+1. Escreva um programa que leia um valor numÃ©rico e calcule e mostre na tela o seu quadrado.
+*/
+
 #include<stdio.h>
 
 main (){
@@ -9,5 +13,5 @@ scanf("%f",&v);
 
 q=v*v;
 
-printf("O valor ao quadrado é %f",q);
+printf("O valor ao quadrado ï¿½ %f",q);
 }
