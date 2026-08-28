@@ -6,7 +6,7 @@ public class exeRetangulo : MonoBehaviour;
 // além que o serialize pede ao usae dar um valor de numero inteiro
 //usando destaforma o seralizefield com o private.. nos dizemos que as outras pastas na acessam esssas variaveis
 [SerializeField] private int a;
-[SeriaLizeField] private int p;
+[SerializeField] private int p;
 
 
 // start sempre com S maiusculo

@@ -5,7 +5,8 @@ votos garantem que um candidato vença no primeiro turno (deve ser mais do que 5
 
 using UnityEngine;
 
-[SeriaLizeField] private int eleitores;
+// SerializeFiel tem o L em minusculo
+[SerializeField] private int eleitores;
 
 void Start() 
 {
