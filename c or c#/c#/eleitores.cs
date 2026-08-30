@@ -12,7 +12,7 @@ public class eleitores : MonoBehaviour
 
     // SerializeFiel tem o L em minusculo
     [SerializeField] private int eleitores;
-    [SerializeField]private int votos;
+    [SerializeField] private int votos;
 
     void Start() 
     {

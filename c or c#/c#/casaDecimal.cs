@@ -12,6 +12,7 @@ using UnityEngine;
 public class casaDecimal: MonoBehaviour
 {
 [SerializeField] private float  valor;   
+
     void Start()
     {
     calc_decimal();    
@@ -20,10 +21,17 @@ public class casaDecimal: MonoBehaviour
     {
         
     }
-    calc_decimal()
+    // esqueceu de tipar, void para  função sem vazia
+     void calc_decimal()
     {
-    int segunda_Casa = (valor % 10 )+0.5;    
-    int valor_novo=  valor + segunda_casa; 
+    float nValor = (int) (valor*100 + 0.5f)/100;
     }
 
 }
+
+/* em C# seria isso? fico na duvida de como converser para inr um numero que antes era inteiro.. apenas que a ideia
+é apenas arredondar a segunda casa
+outra coisa.. como pedi a gente tem que treinar as outras formas de fazer o o usuario dar valores
+porque apartir de agora o usuario daria valores pelo teclado e depois posteriormente seria pelo ouclos de realidade virtual
+bom.. precisamos aprender c# 
+*/
