@@ -10,13 +10,30 @@ public class eleitores : MonoBehaviour
 // ai ela pega os atributos, é OBRIGATORIO
 {
 
-    // SerializeFiel tem o L em minusculo
-    [SerializeField] private int eleitores;
-    [SerializeField] private int votos;
+    
+     private int eleitores;
+     private int votos = 0;
 
     void Start() 
     {
-        calc_1turno();
+        
+    }
+
+    void Update()
+    {
+        if(Input.GetKey(KeyCode.RightArrow))
+        {
+            voto +=1;
+            calc_1turno(); 
+        }
+        if(Input.GetKey(KeyCode.LeftArrow))
+        {
+        voto -=1;
+            if(votos <= 0)
+             {votos = 0;}
+
+        calc_1turno();    
+        }   
     }
 
     void calc_1turno()
@@ -24,17 +41,20 @@ public class eleitores : MonoBehaviour
         /* pedindo pro user digitar um valor
         int votos = Console.ReadLine();
         */
-
         // usando ; aqui no if, o coisa vai achar q o bloco acabou, assim o else fica orfão
         // para alguem vencer ele tem q ser a metade +1
-        if (votos > (eleitores/2))
+        if (eleitores != 0 )
         {
+            votosVencer = (eleitores /2)+1
+            if(votos >= votosVencer)
+            {
             Debug.LogWarning("Ganhou no primeiro turno");
+            }
+            else 
+            {
+                Debug.LogWarning("perdeu");
+            }
         }
-        else {
-            Debug.LogWarning("Tem menos da metade dos votos");
-        }
-
     }
 }
 

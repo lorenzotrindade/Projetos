@@ -11,7 +11,8 @@ using UnityEngine;
 
 public class casaDecimal: MonoBehaviour
 {
-[SerializeField] private float  valor;   
+// sem serialize, pq eu não controlo mais
+private float valorUser = 0.0f;  
 
     void Start()
     {
@@ -19,12 +20,32 @@ public class casaDecimal: MonoBehaviour
     }
     void Update()
     {
-        
+        // seta para a direita
+        if(Input.GetKey(KeyCode.RightArrow))
+        {
+            // não entendi.. aumenta conforme ele segura a seta?
+            valorUser+= 1.0f*Time.DeltaTime;
+            calc_decimal();    
+        }
+        if(Input.GetKey(KeyCode.LeftArrow))
+        {
+            valorUser -= 1.0f*Time.DeltaTime
+            calc_decimal();
+        }
     }
     // esqueceu de tipar, void para  função sem vazia
      void calc_decimal()
     {
-    float nValor = (int) (valor*100 + 0.5f)/100;
+    float nValor = (int) (valorUser*100f + 0.5f)/100f;
+    Debug.Log($"o valor gerado será {nValor}");
+    /*
+    digamos valor *100 gera x
+    x  soma com 0.5f
+     nesse momento já arredondei
+     o int converte tudo
+    */
+
+
     }
 
 }
