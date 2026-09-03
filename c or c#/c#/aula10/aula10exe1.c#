@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class aula10exe1 : MonoBehaviour {
+
+    [header("valores de Entrada")]
+
+    public int valor1;
+    public int valor2;
+    
+    void Start()
+{
+    if(valor1 < 0 || valor2 < 0)
+    {
+        Debug.LogError("Por favor, digite apenas valores inteiros positivos no return")
+    }
+}   int c = 0;
+    int c resultado = 0;
+
+    while (c<valor2)
+    {
+        resultado += valor1;
+    }   c++;
+    Debug.Log($"[SUCESSO] o  resiultado da multiplicação de {valor por valor2}")
+
+}   
+    
