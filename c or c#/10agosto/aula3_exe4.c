@@ -11,6 +11,7 @@ main() {
     printf("Digite um numero de dois digitos (10 a 99): ");
     scanf("%d", &n);   
     d = n / 10;   
+    
     un = n % 10;  
 
     r = n - d - un;
