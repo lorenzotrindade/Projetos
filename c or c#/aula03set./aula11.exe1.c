@@ -19,12 +19,10 @@ seguintes.
     // printf("o primeiro valor da serie é: %d",v1) para isso aguardo ele numa variavel.. não posso começar dentro dele
     atual = v1;
     for(c = 9; c >= 0; c--){
-        atual  +=v2;
+        // se eu quiser reduzir mais, só retirar o atual e colocar v1
+        atual +=v2;
         printf("o proximo resultado  da serie será: %d \n", atual);
     }
 
-    /*
-    até aqui conseguimos faer sabendo até onde a razão vai e como ela cresce.. mas agr nao sei como definir por qual numero a serie começa e apartir dele começampos a soma..
-    */
     
 }
