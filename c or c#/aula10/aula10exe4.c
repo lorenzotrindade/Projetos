@@ -1,11 +1,25 @@
 /*
-4. Faça um programa que lê um valor inteiro n informado pelo usuário e calcula e mostra o n
-ésimo elemento da série de Fibonacci (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...).
+4. Faï¿½a um programa que lï¿½ um valor inteiro n informado pelo usuï¿½rio e calcula e mostra o n
+ï¿½simo elemento da sï¿½rie de Fibonacci (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...).
 
 */
 
 #include<stdio.h>
 main () {
+ int n,x,y,z;
+printf("digite o valor de inicio da sequencia:");
+scanf("%d",&n);
 
+if(n==1)
+    printf("0");
+ x=0;
+ y=1;
+ 
+ for(; n>z ;n--){
+    z=x+y;
+    x=y;
+    y=z;
+    printf("o Proximo valor da sequencia serÃ¡ %d",z);
+ }
 
 }
