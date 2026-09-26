@@ -3,10 +3,13 @@ using UnityEngine;
 // onceito que na unitu a gente cria variaveis privadas mas conseguimos 
 //acessa-las pelo serializeField
 public class exe1 : MonoBehaviour {
+    // o nome da classe principal deve ser o nome do arq
 
     [SerializeField] private float diametroPeca;
 
-    void start(){
+//os metodos do ciclo de vida da unity usando letra maiscula
+    void Start(){
+
         if(diametroPeca > 0)
         {
             //issop é formula de velocidade
