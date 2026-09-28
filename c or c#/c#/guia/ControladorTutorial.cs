@@ -10,15 +10,15 @@ void Start()
     {
         mostrarEtapa();
     }
-void Update() {
-    if(Input.GetKey(KeyCode.Space)) {
+void Update() {//unsadokeydown é como dizer pressionada uma
+    if(Input.GetKeyDown(KeyCode.Space)) {
         if(etapaAtual < instrucoes.Length - 1)
             {
                 etapaAtual++; 
                 mostrarEtapa(); 
             }
-    } 
-    if(Input.GetKey(KeyCode.Backspace)){
+    } //unsadokeydown é como dizer pressionada uma
+    if(Input.GetKeyDown(KeyCode.Backspace)){
         // o importante q seja um valor positivo do array
         if(etapaAtual > 0)
             {
@@ -30,9 +30,12 @@ void Update() {
     }
     private void mostrarEtapa(){
         Debug.Log($"[PASSO {etapaAtual +1}: {instrucoes[etapaAtual]}]");
-        // esse debug não entendi.. ele vai substituir e pq o +1?
+        // só somando +1 passo, pra na iniciar no zero
+
         for(int i = 0; i < pecasDestaque.Length; i++){
-            pecasDestaque[i].SetActive(instrucoes == etapaAtual );
+            pecasDestaque[i].SetActive(i == etapaAtual );
+            // aqui to dizendo o q i aceita um valor bool
+            // se o i não for igual a etapa atual, nem entra no for
             
         }
     }
