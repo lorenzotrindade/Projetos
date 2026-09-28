@@ -10,33 +10,47 @@ void Start()
     {
         mostrarEtapa();
     }
-void Update() {//unsadokeydown é como dizer pressionada uma
-    if(Input.GetKeyDown(KeyCode.Space)) {
-        if(etapaAtual < instrucoes.Length - 1)
-            {
-                etapaAtual++; 
-                mostrarEtapa(); 
-            }
-    } //unsadokeydown é como dizer pressionada uma
+void Update() { //getkeydown ele é  "pressionado uma vez"
+    if(Input.GetKeyDown(KeyCode.Space)) {     
+                AvancarEtapa();     
+    } 
     if(Input.GetKeyDown(KeyCode.Backspace)){
-        // o importante q seja um valor positivo do array
-        if(etapaAtual > 0)
-            {
-                 etapaAtual--;
-                 mostrarEtapa(); 
+                voltarEtapa(); 
             }
         }    
-          
-    }
     private void mostrarEtapa(){
         Debug.Log($"[PASSO {etapaAtual +1}: {instrucoes[etapaAtual]}]");
         // só somando +1 passo, pra na iniciar no zero
 
         for(int i = 0; i < pecasDestaque.Length; i++){
             pecasDestaque[i].SetActive(i == etapaAtual );
-            // aqui to dizendo o q i aceita um valor bool
-            // se o i não for igual a etapa atual, nem entra no for
+            /* vai passar por tudo de pecasDestaque, 
+            mas ignora se não for verdadeiro, essa a 
+            função
+            essa é a função do SetActive
+            */
             
         }
     }
+
+    public void AvancarEtapa(){
+        if(etapaAtual < instrucoes.length - 1)
+        {
+            etapaAtual++;
+            mostrarEtapa();
+        } else {
+            Debug.Log("[TUTORIAL] você já chegou ao final do tutorial do torno!");
+        }
+    }
+    public void voltarEtapa(){
+        if(etapaAtual > 0)
+        {
+            etapaAtual--;
+            mostrarEtapa();
+        } else {
+            Debug.Log("[TUTORIAL] você já chegou ao inicio do tutorial do torno!");
+        }
+        
+    }
+
 }
