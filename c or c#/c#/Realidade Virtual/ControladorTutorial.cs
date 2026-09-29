@@ -34,7 +34,8 @@ void Update() { //getkeydown ele é  "pressionado uma vez"
     }
 
     public void AvancarEtapa(){
-        if(etapaAtual < instrucoes.length - 1)
+        // proriedade de array usama  primeira letra maiscula
+        if(etapaAtual < instrucoes.Length - 1)
         {
             etapaAtual++;
             mostrarEtapa();
@@ -42,7 +43,7 @@ void Update() { //getkeydown ele é  "pressionado uma vez"
             Debug.Log("[TUTORIAL] você já chegou ao final do tutorial do torno!");
         }
     }
-    public void voltarEtapa(){
+    public void VoltarEtapa(){
         if(etapaAtual > 0)
         {
             etapaAtual--;
