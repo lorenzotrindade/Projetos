@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class BotaoEmergencia : MonoBehaviour{
 
-    [SerializeField] private int rpm = DefineRPM();
-    // um rpm padrão, depois o user altera
+    [SerializeField] private int rpm = 600;
+    // um rpm padrão, depois o user altera, não pode se uma chamada para função
     [SerializeField] private bool emergenciaAtivada = false;
 
     void Update()
