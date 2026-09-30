@@ -15,7 +15,7 @@ void Update() { //getkeydown ele é  "pressionado uma vez"
                 AvancarEtapa();     
     } 
     if(Input.GetKeyDown(KeyCode.Backspace)){
-                voltarEtapa(); 
+                VoltarEtapa(); 
             }
         }    
     private void mostrarEtapa(){

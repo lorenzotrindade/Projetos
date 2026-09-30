@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BotaoEmergencia : MonoBehaviour{
 
-    [SerializeField] private int rpm = 600;
+    [SerializeField] private int rpm = DefineRPM();
     // um rpm padrão, depois o user altera
     [SerializeField] private bool emergenciaAtivada = false;
 
@@ -10,16 +10,13 @@ public class BotaoEmergencia : MonoBehaviour{
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            emergenciaAtivada = true;
-            Debug.Log("[MECÂNICA] Usuário pressionou o Botão de Emergência!");
-        }
-
-        if(emergenciaAtivada && rpm > 0)
-        {
-            rpm = 0;
-            Debug.LogWarning("[ALERTA] botão de parada parou");
+            AcionarEmergencia();
         }
     }
-
+    void AcionarEmergencia(){
+        emergenciaAtivada = true;
+        rpm=0;
+        Debug.LogWarning("[ALERTA] botão de parada parou");
+    
+    }
 }
-// mas to na duvida, aqui estamos coolocando valores no inspector né? deveria ser o usuario a colocar esse valor do rpm
