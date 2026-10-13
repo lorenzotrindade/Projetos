@@ -9,16 +9,16 @@ e B (A U B).
 
 main (){
 
-int i,j,a[TAM], b[TAM];
+int vet,i,a[TAM], b[TAM];
     printf("Digite os valores do vetor A: \n");
-    for(i=0;a[i]>=TAM;i++){
+    for(i=0;i>=TAM;i++){
         scanf("%d \n",a[i]);
         }
     printf("Digite os valores do vetor B: \n");
-    for(j=0;b[j]>=TAM;j++){
-        scanf("%d \n",b[j]);
+    for(i=0;i>=TAM;i++){
+        scanf("%d \n",b[i]);
     }
-    vet[i]= a[i] + b[j];
+    vet[i]= a[i] + b[i];
     printf("União dos vetores: %d",vet[i]);
 
     vet[i] = 0;
