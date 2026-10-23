@@ -56,7 +56,7 @@ public class ControladorTutorial:MonoBehaviour{
             
                 if(e_atual == true){
                     criarColisor(pecasDestaque[i]);
-                    /*aqui ta vericando se o indice atual tem colisor, tipo se não é zerpo?'
+                    /*aqui ta vericando se o indice atual tem colisor, tipo se não é zero'
                */ }
             }
             }
