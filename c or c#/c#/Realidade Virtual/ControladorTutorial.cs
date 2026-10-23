@@ -1,57 +1,73 @@
-using UnityEngine;
+using UnityEngine; 
 
-public class ControladorTutorial : MonoBehaviour{
+public class ControladorTutorial:MonoBehaviour{
+    [Tooltip("Frases de orientação")]
+    [SerializeField]private string[] instrucoes;
 
-[SerializeField] private string[] instrucoes;    
-[SerializeField] private GameObject[] pecasDestaque;
-private int etapaAtual=0;
+    [SerializeField] private GameObject[]pecasDestaque; 
+    
+    [Header("-- configurações VR")]
+    [SerializeField] private string[]tagMaoVR = new string[]{"LeftHand", "RightHand"};
+    /*new string[]é avisar para guardar os valores de string q sera nova e tera a tag tagMaoVR*/
 
-void Start()
-    {
+    [Tooltip("Tempo minimo de colisoes")]
+    [SerializeField] private float tempoCoolDown=2.0f;
+    [SerializeField] private int etapaAtual = 0;
+
+    void Start(){
         mostrarEtapa();
     }
-void Update() { //getkeydown ele é  "pressionado uma vez"
-    if(Input.GetKeyDown(KeyCode.Space)) {     
-                AvancarEtapa();     
-    } 
-    if(Input.GetKeyDown(KeyCode.Backspace)){
-                VoltarEtapa(); 
-            }
-        }    
-    private void mostrarEtapa(){
-        Debug.Log($"[PASSO {etapaAtual +1}: {instrucoes[etapaAtual]}]");
-        // só somando +1 passo, pra na iniciar no zero
-
-        for(int i = 0; i < pecasDestaque.Length; i++){
-            pecasDestaque[i].SetActive(i == etapaAtual );
-            /* vai passar por tudo de pecasDestaque, 
-            mas ignora se não for verdadeiro, essa a 
-            função
-            essa é a função do SetActive
-            */
-            
+    void Update(){
+        if (Input.GetKeyDown(KeyCode.D)){
+            AvancarEtapa();
+        }
+        if (Input.GetKeyDown(KeyCode.A)){
+            VoltarEtapa();
         }
     }
-
+    /*criar publico se tiver q chamar em outro script*/
     public void AvancarEtapa(){
-        // proriedade de array usama  primeira letra maiscula
-        if(etapaAtual < instrucoes.Length - 1)
-        {
+        if(etapaAtual < instrucoes.Length -1){
             etapaAtual++;
             mostrarEtapa();
-        } else {
-            Debug.Log("[TUTORIAL] você já chegou ao final do tutorial do torno!");
         }
     }
     public void VoltarEtapa(){
-        if(etapaAtual > 0)
-        {
+        if(etapaAtual > 0){
             etapaAtual--;
             mostrarEtapa();
-        } else {
-            Debug.Log("[TUTORIAL] você já chegou ao inicio do tutorial do torno!");
+        }
+    }
+
+    void mostrarEtapa(){
+        if(pecasDestaque != null && pecasDestaque > 0)
+        {
+                /* Mostra apenas peça atual*/
+            for(int i=0; i < instrucoes.length; i++){
+            if(pecasDestaque[i] != null){
+                bool e_atual;
+                if( i == etapaAtual){
+                    e_atual =true;
+                } else{
+                    e_atual=false;
+                }
+                //setactive escolhe apenas a verdadeira para mostrar
+                pecasDestaque[i].SetActive(e_atual); 
+            
+                if(e_atual == true){
+                    criarColisor(pecasDestaque[i]);
+                    /*aqui ta vericando se o indice atual tem colisor, tipo se não é zerpo?'
+               */ }
+            }
+            }
         }
         
     }
-
+    void  criarColisor(GameObject peca){
+        Collider colisorExistente = peca.GetComponent<Collider>();
+        if(colisorExistente == nul){
+            colisorExistente=peca.Addcomponent<boxCollider>();
+        }
+        colisorExistente.isTrigger=true;
+    }
 }
