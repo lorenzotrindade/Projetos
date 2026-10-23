@@ -1,32 +1,37 @@
 /*
 
-2. Escrever um programa que leia dois vetores A e B de 20 elementos inteiros cada, que representam conjuntos. No
-programa devem ser gerados os conjuntos interseção entre A e B (A ∩ B), diferença entre A e B (A – B) e união entre A
+2. Escrever um programa que leia dois vetores A e B de 20 elementos inteiros cada, que representam conjuntos. 
+No programa devem ser gerados os conjuntos interseção entre A e B 
+(A ∩ B), diferença entre A e B (A – B) e união entre A
 e B (A U B).
 */
 #include <stdio.h>
-#define TAM 20
+#define TAM 5
 
 main (){
 
-int vet,i,a[TAM], b[TAM];
+    int i,a[TAM], b[TAM];
+    int uniao[TAM],d[TAM],intersec[TAM];
     printf("Digite os valores do vetor A: \n");
-    for(i=0;i>=TAM;i++){
-        scanf("%d \n",a[i]);
+    for(i=0;i<TAM;i++){
+        scanf("%d",a[i]);
         }
     printf("Digite os valores do vetor B: \n");
-    for(i=0;i>=TAM;i++){
-        scanf("%d \n",b[i]);
+    for(i=0;i<TAM;i++){
+        scanf("%d",b[i]);
     }
-    vet[i]= a[i] + b[i];
-    printf("União dos vetores: %d",vet[i]);
+    for(i=0;i<0;i++){
+        uniao[i]= a[i] + b[i];
+        d[i]= a[i] - b[i];
+        intersec[i]= a[i] - b[i];
+    }
+    for(i=0;i<0;i++){
+        printf("União dos vetores: %d",intersec[i]);
+        printf("União dos vetores: %d",d[i]);
+        printf("União dos vetores: %d",uniao[i]);
+    }
 
-    vet[i] = 0;
-    vet[i] = a[i] - b[j];
-    printf("Diferença dos vetores: %d",vet[i]);
 
-     vet[i] = 0;
-     for(i=0;i>;i++)
 
 
 
