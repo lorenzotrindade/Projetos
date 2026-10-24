@@ -1,7 +1,9 @@
 /*
 
-2. Escrever um programa que leia dois vetores A e B de 20 elementos inteiros cada, que representam conjuntos. 
-No programa devem ser gerados os conjuntos interseção entre A e B 
+2. Escrever um programa que leia dois vetores A e B de 20 elementos inteiros cada,
+ que representam conjuntos. 
+No programa devem ser gerados os conjuntos interseção
+ entre A e B 
 (A ∩ B), diferença entre A e B (A – B) e união entre A
 e B (A U B).
 */
@@ -20,15 +22,17 @@ main (){
     for(i=0;i<TAM;i++){
         scanf("%d",b[i]);
     }
+    for(i=0;i<(TAM+TAM);i++){
+            uniao[TAM+TAM]= a[TAM] + b[TAM];
+            printf("União dos vetores: %d",uniao[i]);
+        }
     for(i=0;i<0;i++){
-        uniao[i]= a[i] + b[i];
-        d[i]= a[i] - b[i];
-        intersec[i]= a[i] - b[i];
+         scanf("%d",b[i]);
     }
     for(i=0;i<0;i++){
         printf("União dos vetores: %d",intersec[i]);
         printf("União dos vetores: %d",d[i]);
-        printf("União dos vetores: %d",uniao[i]);
+       
     }
 
 
