@@ -12,8 +12,8 @@ e B (A U B).
 
 main (){
 
-    int i,a[TAM], b[TAM];
-    int uniao[TAM],d[TAM],intersec[TAM];
+    int i,ii,a[TAM], b[TAM];
+    int TAM3;
     printf("Digite os valores do vetor A: \n");
     for(i=0;i<TAM;i++){
         scanf("%d",a[i]);
@@ -22,19 +22,56 @@ main (){
     for(i=0;i<TAM;i++){
         scanf("%d",b[i]);
     }
-    for(i=0;i<(TAM+TAM);i++){
-            uniao[TAM+TAM]= a[TAM] + b[TAM];
-            printf("União dos vetores: %d",uniao[i]);
-        }
-    for(i=0;i<0;i++){
-         scanf("%d",b[i]);
+  /*  for(i=0;i<TAM;i++){
+        for(ii=0;ii<TAM;ii++){
+            if(a[i]==b[ii]){
+                TAM2++;
+            }
+            else{
+                df++;
+            }
+        }    
     }
-    for(i=0;i<0;i++){
-        printf("União dos vetores: %d",intersec[i]);
-        printf("União dos vetores: %d",d[i]);
-       
-    }
+        */
 
+        switch ()
+        {
+        case 1:
+            for(i=0;i<TAM;i++){
+                for(ii=0;ii<TAM;ii++){
+                 if(a[i]!=b[ii]){
+                TAM3++;
+            } else{
+                b[ii]=-1;
+            }
+            int u[TAM3];
+             for(i=0;i<TAM3;i++){
+                for(ii=0; ;ii++){
+                    u[i]=a[ii];
+                    i++;
+                    ii++;
+            }
+               for(ii=0; ;ii++){
+                if(b[ii]==-1){
+                    ii++;
+                } else{
+                    u[i]=b[ii];
+                    i++;
+                    ii++;
+                }
+            }
+         }
+        }     
+
+    }
+            
+            break;
+        
+        default:
+            break;
+        }
+
+    
 
 
 
