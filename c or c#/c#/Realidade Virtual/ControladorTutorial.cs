@@ -40,10 +40,10 @@ public class ControladorTutorial:MonoBehaviour{
     }
 
     void mostrarEtapa(){
-        if(pecasDestaque != null && pecasDestaque > 0)
+        if(pecasDestaque != null && pecasDestaque.Length > 0)
         {
                 /* Mostra apenas peça atual*/
-            for(int i=0; i < instrucoes.length; i++){
+            for(int i=0; i < instrucoes.Length; i++){
             if(pecasDestaque[i] != null){
                 bool e_atual;
                 if( i == etapaAtual){
@@ -65,8 +65,8 @@ public class ControladorTutorial:MonoBehaviour{
     }
     void  criarColisor(GameObject peca){
         Collider colisorExistente = peca.GetComponent<Collider>();
-        if(colisorExistente == nul){
-            colisorExistente=peca.Addcomponent<boxCollider>();
+        if(colisorExistente == null){
+            colisorExistente=peca.Addcomponent<BoxCollider>();
         }
         colisorExistente.isTrigger=true;
     }
