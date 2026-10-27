@@ -16,7 +16,7 @@ main (){
 
     int i,ii,a[TAM], b[TAM];
     int TAM3,uniao[TAM2]; dif[TAM3]
-    int k,f,intersecao[5];
+    int k,f,interseccao[5];
     printf("Digite os valores do vetor A: \n");
     for(i=0;i<TAM;i++){
         scanf("%d",a[i]);
@@ -58,12 +58,12 @@ main (){
             ii=TAM;
         }
         if(f){
-            intersecao[k]=a[i];
+            interseccao[k]=a[i];
             k++;
         }
     }
     printf("valores de interseccao:");
-    for(i=0;i<intersecao[5];i++){
+    for(i=0;i<interseccao[5];i++){
         printf("%d-",i);
     }
 
