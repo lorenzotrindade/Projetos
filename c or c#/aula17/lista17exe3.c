@@ -1,33 +1,28 @@
-/*
-Ler dois vetores de 10 elementos e verificar se os nï¿½meros que os
-formam sï¿½o os mesmos,ainda que em ordem
-diferente. Para si mplificar, considere que nï¿½o hï¿½ nï¿½meros repetidos dentro
-de um mesmo vetor.
-*/
-
 #include <stdio.h>
 
 #define TAM 3
  main() {
-    int i,dif,ii, vet1[TAM], vet2[TAM];
+    int i,ii, vet1[TAM], vet2[TAM];
+    dif=0,soma1=0,soma2=0;
     printf("digite os valores do vetor, ele tem 10 elementos: \n");
     for(i=0;i<TAM;i++){
         scanf("%d",&vet1[i]);
     }
     printf("digite os valores do vetor, ele tem 10 elementos: \n");
     for(i=0;i<TAM;i++){
-    printf("%d \n",vet2[i]);
+    scanf("%d",&vet2[i]);
     }
 
-    for(i=0;i<TAM;i++)
-    dif=0;
-    for(ii=0;ii<TAM;ii++){
-        if(vet1[i]!=vet2[ii]){
+    for(i=0;i<TAM && vet1[i]==vet2[i];i++){
             dif=1;
-             ii=TAM;
         }
+    for(i=0;i<TAM;i++)
+            soma1+= vet1[i];
+            soma2+=vet2[i];
+    if(dif == 0){
+        printf("são diferentes");
     }
-    if(dif == 1){
-        printf("sÃ£o iguais");
-    }    
+    else if(d){
+        printf("são iguais");
+    }
 }
