@@ -30,8 +30,10 @@ public class ControladorTutorial : MonoBehaviour
     [SerializeField] private float tempoCoolDown = 2.0f;
     [SerializeField] private int etapaAtual = 0;
 
+
     void Start()
     {
+        //desativa o botão de proximo nivel
         if (botaoProximoNivel != null)
         {
             botaoProximoNivel.SetActive(false);
@@ -54,9 +56,10 @@ public class ControladorTutorial : MonoBehaviour
     public void AvancarEtapa()
     {
         if (aguardandoConfirmacao) return;
+        
 
         string[] instrucoesAtuais = GetInstrucoesAtuais();
-
+    // ue porque isso?
         if (etapaAtual < instrucoesAtuais.Length - 1)
         {
             etapaAtual++;
@@ -73,11 +76,13 @@ public class ControladorTutorial : MonoBehaviour
                 criarColisor(botaoProximoNivel);
             }
         }
+        
     }
 
     public void ConfirmarProximoNivel()
     {
         if (!aguardandoConfirmacao) return;
+        
 
         aguardandoConfirmacao = false;
 
@@ -183,6 +188,7 @@ public class ControladorTutorial : MonoBehaviour
     }
 
     GameObject[] GetPecasAtuais()
+   
     {
         if (niveis != null && niveis.Length > 0 && nivelAtual < niveis.Length)
         {
