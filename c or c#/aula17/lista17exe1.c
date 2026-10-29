@@ -1,4 +1,4 @@
-    /*1. Escrever um programa que leia dois vetores de 10 elementos inteiros e 
+    /*1. Escrever um programa que leia dois vetores de 10 elementos inteiros e
     fa�a a multiplica��o dos elementos de mesmo
 �ndice, colocando o resultado em um terceiro vetor. Mostre o vetor resultante. */
 
@@ -23,5 +23,5 @@ printf("Digite os valores do vetor 1: \n");
              vet3[i]= vet1[i] *vet2[ii];
     }
     for(i=0;i<TAM;i++)
-    printf("%d-",vet3[i]);
+    printf("%d ",vet3[i]);
 }

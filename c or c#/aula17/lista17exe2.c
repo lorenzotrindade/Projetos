@@ -64,14 +64,13 @@ main (){
     }
     printf("valores de interseccao:");
     for(i=0;i<interseccao[5];i++){
-        printf("%d-",interseccao[k]);
+        printf("%d ",interseccao[k]);
     }
     printf("\n");
     printf("valores na diferença: ");
     for(i=0;i<dif[0];i++){
-        printf("%d-",dif[i]);
+        printf("%d ",dif[i]);
     }
     printf("\n");
 
 }
-
