@@ -1,6 +1,6 @@
 /*
- Ler dois vetores de 10 elementos e verificar se os números que os formam são os mesmos, ainda que em ordem
-diferente. Para simplificar, considere que não há números repetidos dentro de um mesmo vetor.
+ Ler dois vetores de 10 elementos e verificar se os nï¿½meros que os formam sï¿½o os mesmos, ainda que em ordem
+diferente. Para simplificar, considere que nï¿½o hï¿½ nï¿½meros repetidos dentro de um mesmo vetor.
 */
 
 #include <stdio.h>
@@ -23,9 +23,9 @@ diferente. Para simplificar, considere que não há números repetidos dentro de um
         }
     }
     if(soma1 != soma2){
-        printf("são diferentes");
+        printf("sï¿½o diferentes");
     }
     else{
-        printf("são iguais");
+        printf("sï¿½o iguais");
     }
 }
