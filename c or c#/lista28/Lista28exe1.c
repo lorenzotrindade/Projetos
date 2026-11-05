@@ -1,32 +1,32 @@
-/* 
-. Escrever um programa que leia dois horários no formato hh:mm:ss e verifique qual horário 
-ocorre primeiro. Use estruturas para representar os horário
-*/
+#include <stdio.h>
+
 struct hora {
     int hh;
-    int mm;    
+    int mm;
     int ss;
-}
+};
 
-#include<stdio.h>
- main (){
-    struct hora r1,r2;
-    printf("digite um horario no formato hh:mm:ss");
-    scanf("%d:%d:%d",&r1.hh,&r1.mm,&r1.ss);
-     printf("digite um horario no formato hh:mm:ss");
-    scanf("%d:%d:%d",&r2.hh,&r2.mm,&r2.ss);
+int main() {
+    struct hora r1, r2;
 
-    if(r1.hh > r2.hh){
-        printf("maior horario %d",r1);
+    printf("Digite o primeiro horario (hh:mm:ss): ");
+    scanf("%d:%d:%d", &r1.hh, &r1.mm, &r1.ss);
+    printf("Digite o segundo horario (hh:mm:ss): ");
+    scanf("%d:%d:%d", &r2.hh, &r2.mm, &r2.ss);
+
+    if (r1.hh > r2.hh) {
+        printf("O segundo horario ocorre primeiro");
     }
-    else if( r1.hh == r2.hh){
-        if(r1.mm > r2.mm){
-            printf("maior horario &d",r1);
+    else if (r1.hh == r2.hh) {
+            if (r1.mm > r2.mm) {
+             printf("O primeiro horario ocorre primeiro");
+        }   else if(r1.ss == r2.ss){
+            printf("locura");
+        } else{
+            printf("O segundo horario ocorre primeiro");
         }
-        else{
-            printf("maior horario &d",r2);
+    }else{
+            printf("O segundo horario ocorre primeiro");
         }
-    } else{
-        printf("maior horario &d",r2);
-    }
+
 }
