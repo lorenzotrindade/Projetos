@@ -13,30 +13,43 @@ e B (A U B).
 main (){
 
     int i,a[TAM], b[TAM];
-    int uniao[TAM],d[TAM],intersec[TAM];
+    int j,achou,TAM2;
+    int uniao[TAM*2],d[TAM],intersec[TAM];
     printf("Digite os valores do vetor A: \n");
     for(i=0;i<TAM;i++){
-        scanf("%d",a[i]);
+        scanf("%d",&a[i]);
         }
+
     printf("Digite os valores do vetor B: \n");
     for(i=0;i<TAM;i++){
-        scanf("%d",b[i]);
+        scanf("%d",&b[i]);
     }
-    for(i=0;i<(TAM+TAM);i++){
-            uniao[TAM+TAM]= a[TAM] + b[TAM];
-            printf("União dos vetores: %d",uniao[i]);
+    // LOGICA: eu não sei tamanho, então ée é um contador
+    TAM2=0;
+    for(i=0;i <TAM;i++) {
+           uniao[TAM2] = a[i];
+           TAM2++;
+     }
+     for(i=0;i<TAM;i++){
+        achou = 0;
+        for (j = 0; j < TAM2; j++){
+            if(b[i]==uniao[j]){
+                achou=1;
+            }
         }
-    for(i=0;i<0;i++){
-         scanf("%d",b[i]);
-    }
-    for(i=0;i<0;i++){
-        printf("União dos vetores: %d",intersec[i]);
-        printf("União dos vetores: %d",d[i]);
-       
-    }
+        if (achou == 0){
+        uniao[TAM2] = b[i];
+        TAM2++;
+        }
+        
+     }
+        printf("uniao: ");
+        for(i=0;i<TAM2;i++){
+            printf("%d", uniao[i]);
+        }  
+        printf("\n");
 
-
-
+        // diferença
 
 
 }
