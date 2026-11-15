@@ -1,6 +1,6 @@
 /**/
 
-#include main <stdio.h>
+#include <stdio.h>
 
 #define TAM 8
 main() {
@@ -12,7 +12,7 @@ while(i<TAM){
         if(vet[j]==vet[i])
         break;
         if(j== -1)
-        i++; //isso é avanço de  posição
+        i++; 
     }
 }
 for(i=0;i<TAM;i++)

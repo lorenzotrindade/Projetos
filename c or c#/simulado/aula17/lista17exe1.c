@@ -1,6 +1,6 @@
     /*1. Escrever um programa que leia dois vetores de 10 elementos inteiros e
-    fa�a a multiplica��o dos elementos de mesmo
-�ndice, colocando o resultado em um terceiro vetor. Mostre o vetor resultante. */
+    faça a multiplicao dos elementos de mesmo
+indice, colocando o resultado em um terceiro vetor. Mostre o vetor resultante. */
 
 #include <stdio.h>
 #define TAM 3
