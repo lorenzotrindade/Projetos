@@ -30,7 +30,7 @@ fazem parte da primeira linha, da primeira coluna, da última linha e da última
     }
 }
 */
-
+/*  funciona, MAS É INIFICIENTE
 main (){
     int mat[lin][col];
     int i, ii, menor;
@@ -45,6 +45,7 @@ main (){
     menor=mat[0][0];
      for(i=0;i<lin;i++){
         for(ii=0;ii<col;ii++){
+        // selecionei os lugares q quero estar..
             if(i==0 || i==lin-1 || ii == 0 || ii == col - 1) {
                 if(mat[i][ii] < menor){
                     menor = mat[i][ii];
@@ -54,3 +55,40 @@ main (){
         }       
         printf("O menor elemento presente nas bordas da matriz e: %d\\n", menor);
     }
+*/
+    //codigo do professor
+
+    #include <stdio.h>
+    #define lin 5
+    #define col 5
+
+ int main() {
+    int mat[lin][col];
+    int i, ii, menor;
+
+    printf("digite 25  valores: \n");
+    for(i=0;i<lin;i++){
+        for(ii=0;ii<col;ii++){
+            scanf("%d", &mat[i][ii]);
+    }
+   }
+   menor=mat[0][0];
+   // começar pelo valor q faz parte do problema
+     for(i=0;i<lin;i++){
+        // EU POSSO FIXAR A LINHA OU COLUNA
+            if(mat[0][i] < menor){
+                menor = mat[0][ii];
+            }  
+             if(mat[lin-1][i]){
+                menor = mat[lin-1][i];
+             }
+             //fixando coluna
+             if(mat[i][0] <menor){
+                menor = mat[i][0];
+             }   
+             if(mat[i][col-1] < menor){
+                menor = mat[i][col-1];
+             }
+       printf("O menor elemento presente nas bordas da matriz e: %d \n", menor);
+    }
+}
